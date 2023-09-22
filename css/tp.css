@@ -1,3 +1,58 @@
+#CaptionCarrusel{
+    width: 40%;
+    height: max-content;
+    text-align: end;    
+    position: absolute;   
+    top:55%;
+    z-index: 10;   
+    color: #fff;  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: auto; /* Elimina cualquier margen izquierdo existente */
+    right: 5%; /* Establece el margen derecho en 0 para moverlo completamente a la derecha */
+}
+.full-viewport-img {
+  width: 100%;
+  height: 100vh; /* 100% del alto del viewport */
+  object-fit: cover; /*Mantiene la relación de aspecto y recorta la imagen si es necesario */
+}
+.carouselExampleControls{
+  margin: 0;
+  padding: 0;
+}
+.carrusel{
+  margin: 0;
+  padding: 0;
+}
+
+#botonQuiero{
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+#CaptionCarrusel>h5{
+  font-size: 2vw;
+}
+/* ----------------------fichas cards ------------------ */
+.container>p{
+  text-align: center;
+
+}
+/* ----------------------fichas cards ------------------ */
+#areaCards{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+/* ----------------------dos columnas ------------------ */
+#dosColumnas{
+  margin: 0 0 0 0;
+  margin-top: 15px;
+  width: 100%;
+  padding: 0;
+  background-color: blueviolet;
+}
 
 
 

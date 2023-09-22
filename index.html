@@ -5,119 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>TP</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <link rel="stylesheet" href="css/tp.css">
 </head>
 <body>
-  <!-- Inicio Barra Navegacion  -->    
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-middle">
-                Conf Bs As
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">La conferencia</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Los oradores</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">El lugar y la fecha</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Conviertete en orador</a></li>
-                  <li class="nav-item"><a class="nav-link text-success" href="#">Comprar Tickets</a></li>                  
-              </ul>     
-            </div>
-        </div>
-      </nav>
-      <!--Fin Barra Navegacion -->
-
-      <!-- Inicio Carousel -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/ba1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block ">
-              <h5>Conf Bs As</h5>
-              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-              <button type="button" class="btn btn-outline-secondary">Quiero ser orador</button>
-              <button type="button" class="btn btn-success">Comprar tickets</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/ba2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/ba3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+  <!--------------------------------- Inicio Barra Navegacion -------------------------------- -->    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="img/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-middle">
+            Conf Bs As
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">La conferencia</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Los oradores</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">El lugar y la fecha</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Conviertete en orador</a></li>
+              <li class="nav-item"><a class="nav-link text-success" href="#">Comprar Tickets</a></li>                  
+          </ul>     
+        </div>
+    </div>
+  </nav>
+  <!-----------------------------------Fin Barra Navegacion ------------------------------>
+
+  <!-- ---------------------------------Inicio Carousel ------------------------------------>
+  <div class="carrusel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/ba1_oscuro.jpg" class="full-viewport-img" alt="..." >          
+        </div>
+        <div class="carousel-item">
+          <img src="img/ba2_oscuro.jpg" class="full-viewport-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/ba3_oscuro.jpg" class="full-viewport-img" alt="...">
+        </div>
       </div>
-      <!-- Fin Carousel -->
+      <div class="carousel-caption d-none d-md-block" id="CaptionCarrusel"> 
+        <h5>Conf Bs As</h5>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <button type="button" class="btn btn-outline-secondary" id="botonQuiero">Quiero ser orador</button>
+        <button type="button" class="btn btn-success">Comprar tickets</button>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+    <!------------------------------------ Fin Carousel ------------------------------------>
 
-      <p>Conoce a los<br>ORADORES</p>
-      
-      
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
-            <div class="card-body">
-              <a href="#" class="card-link">Enlace de tarjeta</a>
-              <a href="#" class="card-link">Otro enlace</a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ex excepturi libero, esse ipsam sapiente ab quas dolore molestias magni? Necessitatibus consectetur praesentium excepturi aliquid ipsa cupiditate rerum sed sapiente..</p>
-            </div>            
+   
+  <!-------------------------------- Inicio del container cards ----------------------------> 
+  <div class="container" id="areaCards">
+    <p>Conoce a los</p>
+    <p>ORADORES</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning">JavaScript</button>
+            <button type="button" class="btn btn-primary">React</button>
           </div>
+          <div class="card-body">
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ex excepturi libero, esse ipsam sapiente ab quas dolore molestias magni? Necessitatibus consectetur praesentium excepturi aliquid ipsa cupiditate rerum sed sapiente..</p>
+          </div>            
         </div>
-
-        <div class="col">
-          <div class="card h-100">            
-            <img src="img//bill.jpg" class="card-img-top" alt="Bill Gates">
-            <div class="card-body">
-              <a href="#" class="card-link">Enlace de tarjeta</a>
-              <a href="#" class="card-link">Otro enlace</a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Bill Gates</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore tempore accusantium ipsum hic nam, in ipsam. Corporis, autem impedit voluptates voluptatum necessitatibus hic repudiandae fugiat aut, optio voluptatem architecto.</p>
-            </div>
-            
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
-            <div class="card-body">
-              <a href="#" class="card-link">Enlace de tarjeta</a>
-              <a href="#" class="card-link">Otro enlace</a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde, nihil exercitationem dolor alias doloremque voluptate aliquam vel nulla necessitatibus quis. Distinctio cumque minus perspiciatis sapiente vel asperiores facilis quod..</p>
-            </div>            
-          </div>
-        </div>
-
       </div>
 
+      <div class="col">
+        <div class="card h-100">            
+          <img src="img//bill.jpg" class="card-img-top" alt="Bill Gates">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning">JavaScript</button>
+            <button type="button" class="btn btn-primary">React</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore tempore accusantium ipsum hic nam, in ipsam. Corporis, autem impedit voluptates voluptatum necessitatibus hic repudiandae fugiat aut, optio voluptatem architecto.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+          <div class="card-body">
+            <button type="button" class="btn btn-secondary">Negocios</button>
+            <button type="button" class="btn btn-danger">Startups</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde, nihil exercitationem dolor alias doloremque voluptate aliquam vel nulla necessitatibus quis. Distinctio cumque minus perspiciatis sapiente vel asperiores facilis quod..</p>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>          
+  <!---------------------------------- fin del container cards -------------------------------> 
 
+  <!----------------------------------- Inicio Imagen dos columnas ---------------------------------->
+  <div class="container-fluid" id="dosColumnas">
+    <div class="card mb-3" >
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="img/ba3.jpg" class="img-fluid" alt="Buenos Aires">
+        </div>
+        <div class="col-md-6 text-white bg-dark">
+          <div class="card-body">
+            <h5 class="card-title">Bs As - Octubre</h5>
+            <p class="card-text">Buenos Aires es la capital y la ciudad más grande de Argentina, ubicada en la costa este del país, a orillas del Río de la Plata. Es conocida por su rica cultura, arquitectura impresionante, vibrante escena artística, una pasión por el tango y una gastronomía excepcional. Buenos Aires es también un importante centro económico y político de América del Sur, con una mezcla de tradición y modernidad que la hace única. Sus barrios distintivos, como La Boca, San Telmo, Palermo y Recoleta, ofrecen una amplia variedad de experiencias culturales y turísticas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!----------------------------------- Fin imagen dos columnas ---------------------------------->
+
+        
 
     
     <!-- Boostrap Javascript -->
