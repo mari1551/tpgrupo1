@@ -1,16 +1,17 @@
+/* ---------------------- carrusel  de imagenes ------------------ */
 #CaptionCarrusel{
-    width: 40%;
+    width: 43%;
     height: max-content;
     text-align: end;    
     position: absolute;   
-    top:55%;
+    top:53%;
     z-index: 10;   
     color: #fff;  
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.2);
     left: auto; /* Elimina cualquier margen izquierdo existente */
-    right: 5%; /* Establece el margen derecho en 0 para moverlo completamente a la derecha */
+    right: 5%; /* Establece el margen derecho en para moverlo completamente a la derecha */
 }
 .full-viewport-img {
   width: 100%;
@@ -32,26 +33,66 @@
 }
 
 #CaptionCarrusel>h5{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 /* ----------------------fichas cards ------------------ */
-.container>p{
+#areaCards>p, #areaFormulario>p{
+  font-size: medium;
   text-align: center;
-
+  line-height:1.1;
+  margin-bottom: 8px;
 }
-/* ----------------------fichas cards ------------------ */
+.letraGrande{
+  font-size: xx-large;
+  font-weight:600;
+}
 #areaCards{
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   width: 75%;
 }
-/* ----------------------dos columnas ------------------ */
+.card-img-top{
+  height: 58%;
+}
+#areaCards button{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1;
+  padding-right: 1;
+}
+.botonCard{
+  padding-top: 20px;
+  padding-bottom: 0; 
+}
+.textoCard{
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+
+/* --------------------Imagen dos columnas ------------------ */
 #dosColumnas{
   margin: 0 0 0 0;
   margin-top: 15px;
   width: 100%;
   padding: 0;
-  background-color: blueviolet;
+}
+
+/* -------------------- Formulario ------------------ */
+#areaFormulario{
+  width: 50%;
+}
+#charlaignite{
+  border-bottom:1px dotted gray;
+}
+
+#BotonEnviarForm{
+  background-color: #96C93E;
+  border-color: #96C93E ;
+}
+#mensaje{
+  color:gray;
 }
 
 
