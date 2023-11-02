@@ -50,7 +50,7 @@
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 75%;
 }
 .card-img-top{
@@ -79,7 +79,7 @@
 /* --------------------Imagen dos columnas ------------------ */
 #dosColumnas{
   margin: 0 0 0 0;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
   padding: 0;
 }
@@ -101,6 +101,7 @@
 #charlaignite{
   border-bottom:1px dotted gray;
 }
+
 #mensaje{
   margin-bottom: 0px;
 }
@@ -114,6 +115,81 @@
   color:gray;
 }
 
+/*----------------------------- TICKETS ---------------------*/
+#areaTicket{
+  position:relative;
+  width: 60%;
+  padding-top: 120px;
+}
+.ticket{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.ticket-titulo{
+  font-size: 30px;
+  font-weight: 500;
+}
+.ticket-texto{
+  font-size:large;
+}
+.ticket-descuento{
+  font-size:x-large;
+  font-weight: 500;
+}
+.ticket-nota{
+  font-size:medium;
+}
+
+#ticket1{
+  border:2px solid #3F6FA0;
+}
+#ticket1:hover, #ticket2:hover, #ticket3:hover{
+  background-color: gainsboro;
+  cursor: pointer;
+}
+#ticket2{
+  border:2px solid #558A93;
+}
+#ticket3{
+  border:2px solid #FFBF00;
+}
+/*------------- formulario de ticket -----------*/
+#areaFormularioTicket{
+  width: 60%;
+  margin-top:15px;
+}
+
+#p-titulo{
+  text-align: center;
+}
+
+#p-titulo #letra-grande{
+  font-size:45px;
+}
+#areaFormularioTicket .form-control, .form-select{
+  height: 50px;
+}
+#areaFormularioTicket div{
+  margin-bottom: 10px;
+}
+
+#caja_informacion{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: large;
+  color:#0576E1;
+  background-color: #CBE5FE;
+  border-radius: 5px;
+}
+#areaFormularioTicket button{
+  background-color: #96C93E;
+  border-color: #96C93E;
+  font-size: larger;
+  height: 50px;
+}
 /* -------------------- Footer ------------------ */
 footer{
   background: linear-gradient(90deg, rgba(26,54,56,1) 0%, rgba(28,69,91,1) 48%, rgba(31,82,113,1) 100%);
@@ -135,7 +211,7 @@ footer .nav-link{
 }
 
 /* --------------------- mediaqueries ---------------------------*/
- @media (max-width: 992px) {
+@media (max-width: 992px) {
   #areaFormulario {
     width: 90%; 
   } 
@@ -164,6 +240,9 @@ footer .nav-link{
   
  
 }
+
+
+
 
 
 
