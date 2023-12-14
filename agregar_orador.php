@@ -18,36 +18,7 @@
         </div>
         <div>
             <div class="container">
-                
-                <?php /*
-                   include ('orador.php');
-                    $orador = new Orador();
-                    if(isset($_POST)&&!empty($_POST)){
-                        $nombre=$orador->depurar($_POST['nombre']);
-                        $apellido=$orador->depurar($_POST['apellido']);    
-                        $mail=$orador->depurar($_POST['mail']);
-                        $tema=$orador->depurar($_POST['tema']);
-                        $fechaActual = date("Y-m-d");
-                                                
-                        $result = $orador->registrar($nombre, $apellido, $mail, $tema,$fechaActual);
-					    if($result){
-						    $message= "Orador registrado con exito";
-						    $class="alert alert-success";
-                            header('location:admin.php');
-						
-					    }else{
-						    $message="No se pudieron registrar los datos";
-						    $class="alert alert-danger";
-					    }
-					
-					?>
-                    <div class="<?php echo $class?>">
-				        <?php echo $message;?>
-				    </div>	
-				<?php
-				}
-				//$dato_orador=$orador->consultar_id($id);*/
-			?>
+
                 <form id="formularioOradores" action="registrar_orador.php" method="post">
                 <div class="row g-3 mb-3"> 
                     <div class="col-md-6"> 

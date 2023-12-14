@@ -1,13 +1,18 @@
 <?php 
+  session_start(); 
+  if(!isset($_SESSION["usuario"])){
+      header('location:index.php');
+      exit();
+  }
+
 require 'conexion.php';
-//require 'orador.php';
 $consulta_sql = 'SELECT * FROM oradores';
 $resultado = mysqli_query($conexion,$consulta_sql);
 $listado = mysqli_fetch_all($resultado,MYSQLI_ASSOC); 
 
 // Verificamos si hay datos en la lista de oradores
 if (!empty($listado)) {
-    // Iteramos sobre cada orador en la lista
+
     ?>
     <table class="table">
         <thead>
