@@ -11,24 +11,7 @@
 <body>
   <!------------------------------ Inicio Barra Navegacion --------------------------- -->    
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="img/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-middle">
-            Conf Bs As
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">La conferencia</a></li>
-              <li class="nav-item"><a class="nav-link" href="#areaCards">Los oradores</a></li>
-              <li class="nav-item"><a class="nav-link" href="#dosColumnas">El lugar y la fecha</a></li>
-              <li class="nav-item"><a class="nav-link" href="#areaFormulario">Conviertete en orador</a></li>
-              <li class="nav-item"><a class="nav-link text-success" href="ticket.html">Comprar Tickets</a></li>                  
-          </ul>     
-        </div>
-    </div>
+        <?php include 'pages/opciones_menu.php'; ?>
   </nav>
   <!-----------------------------------Fin Barra Navegacion ------------------------------>
 
@@ -49,8 +32,8 @@
       <div class="carousel-caption d-none d-md-block" id="CaptionCarrusel"> 
         <h5>Conf Bs As</h5>
         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-        <button type="button" class="btn btn-outline-secondary" id="botonQuiero">Quiero ser orador</button>
-        <button type="button" class="btn btn-success">Comprar tickets</button>
+        <a href="#areaFormulario" class="btn btn-outline-secondary" id="botonQuiero">Quiero ser orador</a>
+        <a href="ticket.php" class="btn btn-success" id="botonTicket">Comprar tickets</a>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -137,25 +120,27 @@
   <div class="container" id="areaFormulario">
     <p class="mb-4">CONVIÉRTETE EN UN<br><span class="letraGrande">ORADOR</span></p> 
     <p>Anótate como orador para dar una <span id="charlaignite">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>  
-    <div class="row g-3 mb-3"> 
-      <div class="col-md-6">      
-        <input type="text" class="form-control" id="formInput1" placeholder="Nombre">
+    <form id="formularioOradores" action="registrar_orador.php" method="post">
+      <div class="row g-3 mb-3"> 
+        <div class="col-md-6">      
+          <input type="text" class="form-control" id="inputOradorNombre" placeholder="Nombre" name="nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputOradorApellido" placeholder="Apellido" name="apellido" required>
+        </div>
       </div>
-      <div class="col-md-6">
-        <input type="text" class="form-control" id="formInput2" placeholder="Apellido">
+      <div class="row">
+        <div class="mb-3">      
+          <textarea class="form-control" id="inputOradorTema" placeholder="Sobre qué quieres hablar?" rows="3" name="tema" required></textarea>    
+          <p id="mensaje">Recuerda incluir un título para tu charla</p>   
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="mb-3">      
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Sobre qué quieres hablar?" rows="3"></textarea>    
-        <p id="mensaje">Recuerda incluir un título para tu charla</p>   
+      <div class="row">
+        <div class="col-md-12 mb-3"> 
+          <button class="btn btn-primary w-100" type="button" id="btnEnviarOrador">Enviar</button>          
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 mb-3"> 
-        <button class="btn btn-primary w-100" type="button" id="BotonEnviarForm">Enviar</button>          
-      </div>
-    </div>
+    </form>
   </div>
   <!--------------------------- Fin Formulario ---------------------------------->
 
@@ -217,8 +202,8 @@
   <!--------------------------- Fin Footer ---------------------------------->
 
         
-
-    
+    <!-- Archivo javascript script.js -->
+    <script src="js/script.js"></script>
     <!-- Boostrap Javascript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

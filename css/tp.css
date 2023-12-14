@@ -31,6 +31,9 @@
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
+#botonTicket{
+  
+}
 
 #CaptionCarrusel>h5{
   font-size: 2.5vw;
@@ -106,11 +109,12 @@
   margin-bottom: 0px;
 }
 
-#BotonEnviarForm{
+#btnEnviarOrador{
   background-color: #96C93E;
   border-color: #96C93E;
   font-size: larger;
-}
+} 
+
 #mensaje{
   color:gray;
 }
@@ -154,6 +158,7 @@
 #ticket3{
   border:2px solid #FFBF00;
 }
+/*////////////// ARCHIVO TICKET //////////////////*/
 /*------------- formulario de ticket -----------*/
 #areaFormularioTicket{
   width: 60%;
@@ -189,6 +194,112 @@
   border-color: #96C93E;
   font-size: larger;
   height: 50px;
+}
+/*////////////// ARCHIVO LOGIN //////////////////*/
+#divLoginPrincipal{
+  background-color: #CBE5FE;
+  height: 100vh;
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+#divLoginLateral{
+  background-color: #3F6FA0;
+  height: 100%;
+  width: 25%; /*ojo recordar cambiar esto en mediaqueries paara pantallas pequeñas */
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#divLoginLogo{
+  position: relative;
+  top:10px;
+  width: 70%;
+  height: 20%;
+  margin:5px;  
+
+}
+#loginLogocac{
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+}
+#divLoginCentral{
+  box-sizing: border-box;
+  background-color: #f6f7fc;
+  width: 75%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#divLoginContenido{
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 70%;
+  height: min-content;
+} 
+#areaBotonLogIn{
+  text-align: center;
+}
+#divLoginFormFull{
+  color:white;
+  width: 100%;
+  box-sizing: border-box;
+  margin:0;
+  padding: 10px;
+  background-color: #212529;
+  border:5px solid #96C93E;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+#btnLogIn{
+  background-color: #96C93E;
+  border-color: #96C93E;
+  font-size: larger;
+  height: 50px;
+}
+#divLoginMensaje{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/*///// ARCHIVO ADMIN //////////*/
+#headerAdmin{
+  background-color: #212529;
+  height: 100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#headerAdmin > a{
+  background-color: #96C93E;
+  border: 1px solid #96C93E;
+  border-radius: 5px;
+  padding: 15px 25px 15px 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+#footerAdmin{
+  position: relative;
+  bottom: 0;
+}
+
+.botonVerde{
+  background-color: #96C93E;
+  border-color: #96C93E;
+  font-size: larger;
+} 
+
+#divListadoOradores{
+  margin-top: 50px;
 }
 /* -------------------- Footer ------------------ */
 footer{
@@ -231,14 +342,30 @@ footer .nav-link{
   #listaFooter2 li{
     border-left: 1px solid grey;
     break-inside: avoid;
+  }  
+ 
+}
+
+@media (max-width: 767px) {
+  #divLoginLateral{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  } 
+  
+  #divLoginLogo{
+    width: max-content;
+    height: 100%;  
   }
 
-  
-  
-
-  
-  
- 
+  #divLoginCentral{
+    width: 100%;
+    /* height: 100%; */
+    padding: 20px;
+    display: flex;
+  }
 }
 
 

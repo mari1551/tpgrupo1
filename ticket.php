@@ -11,24 +11,7 @@
 <body>
   <!------------------------------ Inicio Barra Navegacion --------------------------- -->    
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="img/codoacodo.png" alt="" width="100" height="60" class="d-inline-block align-middle">
-            Conf Bs As
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">La conferencia</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#areaCards">Los oradores</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#dosColumnas">El lugar y la fecha</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#areaFormulario">Conviertete en orador</a></li>
-              <li class="nav-item"><a class="nav-link text-success" href="ticket.html">Comprar Tickets</a></li>>                  
-          </ul>     
-        </div>
-    </div>
+      <?php include 'pages/opciones_menu.php'; ?>
   </nav>
   <!-----------------------------------Fin Barra Navegacion ------------------------------>
    
@@ -188,8 +171,8 @@
   <!--------------------------- Fin Footer ---------------------------------->
 
         
-
-  <script src="js/script.js"></script>
+  <!-- Archivo javascript script.js -->
+    <script src="js/script.js"></script>
     <!-- Boostrap Javascript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
