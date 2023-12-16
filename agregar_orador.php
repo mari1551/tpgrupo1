@@ -22,20 +22,20 @@
                 <form id="formularioOradores" action="registrar_orador.php" method="post">
                 <div class="row g-3 mb-3"> 
                     <div class="col-md-6"> 
-                    <input type="text" class="form-control" id="inputOradorNombre" name="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="inputOradorNombre" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputOradorApellido" name="apellido" placeholder="Apellido">
+                    <input type="text" class="form-control" id="inputOradorApellido" name="apellido" placeholder="Apellido" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="mb-3">      
-                    <input type="mail" class="form-control" id="inputOradorMail" name="mail" placeholder="mail">
+                    <input type="mail" class="form-control" id="inputOradorMail" name="mail" placeholder="mail" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="mb-3">      
-                    <textarea class="form-control" id="inputOradorTema" rows="3" name="tema" placeholder="Tema a tratar"></textarea>    
+                    <textarea class="form-control" id="inputOradorTema" rows="3" name="tema" placeholder="Tema a tratar" required></textarea>    
                     </div>
                 </div>
                 <div class="row">

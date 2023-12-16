@@ -131,6 +131,11 @@
       </div>
       <div class="row">
         <div class="mb-3">      
+          <input type="mail" class="form-control" id="inputOradorEmail" placeholder="Email@email.com" name="mail" required> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3">      
           <textarea class="form-control" id="inputOradorTema" placeholder="Sobre qué quieres hablar?" rows="3" name="tema" required></textarea>    
           <p id="mensaje">Recuerda incluir un título para tu charla</p>   
         </div>

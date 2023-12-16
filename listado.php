@@ -1,5 +1,5 @@
 <?php 
-  session_start(); 
+//   session_start(); 
   if(!isset($_SESSION["usuario"])){
       header('location:index.php');
       exit();
@@ -45,10 +45,22 @@ if (!empty($listado)) {
                     <a href="modificar_orador.php?id=<?php echo $id;?>" class="edit" title="Editar" data-toggle="tooltip"><i class="fa-regular fa-pen-to-square"></i></a>
                 </td>
                 <td>
-                    <a href="eliminar_orador.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="fa-solid fa-trash-can"></i></a>
+                    <!-- <a href="eliminar_orador.php?id=<?php echo $id;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="fa-solid fa-trash-can"></i></a> -->
+                    <a href="#" onclick="confirmarEliminar('<?php echo $id; ?>');"class="delete" title="Eliminar" data-toggle="tooltip"><i class="fa-solid fa-trash-can"></i></a>
                 </td>
             </tr>
         </tbody>
+        <script>
+            function confirmarEliminar(id) {
+                var confirmacion = confirm("¿Estás seguro de que quieres eliminar este orador?");
+                if (confirmacion==true) {
+                    // Si el usuario confirma, redirige a la página de eliminación
+                    window.location.href = 'eliminar_orador.php?id=' + id;
+                } else {
+                    // Si el usuario cancela, no hace nada
+                }
+            }
+        </script>
         <?php
         }
     } 
